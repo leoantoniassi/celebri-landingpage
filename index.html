@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Celebri — Gestão de buffets e eventos, do escritório ao salão</title>
+  <meta name="description" content="Celebri é a plataforma SaaS White Label para buffets e casas de festas: painel web para a gestão e aplicativo móvel para a equipe operar o evento. Escalas, portaria com QR, mesas, cozinha e muito mais." />
+  <meta name="theme-color" content="#16254F" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Celebri — Gestão de buffets e eventos" />
+  <meta property="og:description" content="Do orçamento à operação do dia da festa: o painel web para o gestor e o app para a equipe, com a marca do seu buffet." />
+  <meta property="og:image" content="assets/logo.svg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Ir para o conteúdo</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a class="nav__brand" href="#inicio" aria-label="Celebri — início">
+        <img src="assets/logo.svg" alt="" width="42" height="42" class="nav__logo" />
+        <span class="nav__name">Celebri</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Navegação principal">
+        <a href="#problema">O problema</a>
+        <a href="#plataformas">Plataformas</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#app">App</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#equipe">Equipe</a>
+        <a class="btn btn--sm btn--primary nav__cta" href="#contato">Fale conosco</a>
+      </nav>
+
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="blob blob--cyan"></div>
+        <div class="blob blob--magenta"></div>
+        <div class="blob blob--blue"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            SaaS White Label para buffets e casas de festas
+          </span>
+          <h1 class="hero__title">
+            A festa inteira<br />
+            na palma da mão<br />
+            da sua <span class="grad-text">equipe</span>.
+          </h1>
+          <p class="hero__lead">
+            O <strong>Celebri</strong> une o painel web que organiza clientes, orçamentos e eventos
+            ao aplicativo que a equipe usa <strong>no dia da festa</strong> — portaria com QR,
+            contador de pessoas, mesas e cozinha, tudo com a <strong>sua marca</strong>.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#plataformas">Conheça a plataforma</a>
+            <a class="btn btn--ghost" href="#app">Ver o app da equipe</a>
+          </div>
+
+          <ul class="hero__points">
+            <li><span class="tick">✓</span> Painel web + aplicativo Android</li>
+            <li><span class="tick">✓</span> Multi-tenant com isolamento por buffet</li>
+            <li><span class="tick">✓</span> White Label: cores e logo do seu buffet</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" data-delay="150" aria-hidden="true">
+          <div class="phone phone--hero">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <img src="assets/portaria.png" alt="Tela da portaria do app Celebri Staff" loading="eager" />
+            </div>
+          </div>
+          <div class="float-card float-card--a">
+            <span class="float-card__icon">🎟️</span>
+            <div>
+              <strong>Família Souza</strong>
+              <small>válido para 4 pessoas</small>
+            </div>
+          </div>
+          <div class="float-card float-card--b">
+            <span class="float-card__icon">👥</span>
+            <div>
+              <strong>128 presentes</strong>
+              <small>contador em tempo real</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#stats" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="256" data-suffix="+">0</span>
+          <span class="stat__label">testes automatizados no backend</span>
+        </div>
+        <div class="stat reveal" data-delay="80">
+          <span class="stat__num" data-count="0" data-suffix="" data-zero="zero">zero</span>
+          <span class="stat__label">erros no build do aplicativo</span>
+        </div>
+        <div class="stat reveal" data-delay="160">
+          <span class="stat__num" data-count="2">0</span>
+          <span class="stat__label">produtos em um só ecossistema</span>
+        </div>
+        <div class="stat reveal" data-delay="240">
+          <span class="stat__num" data-text="∞">∞</span>
+          <span class="stat__label">buffets na mesma plataforma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROBLEMA / SOLUÇÃO ===================== -->
+    <section class="section section--light" id="problema">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow eyebrow--dark">O problema</span>
+          <h2 class="section__title">A festa não pode parar por causa de papel</h2>
+          <p class="section__sub">
+            A operação de um buffet é rápida e barulhenta. Sem um fluxo centralizado,
+            a equipe perde tempo e a informação se perde pelo caminho.
+          </p>
+        </div>
+
+        <div class="compare">
+          <div class="compare__col compare__col--before reveal">
+            <h3>Antes</h3>
+            <ul class="compare__list">
+              <li><span class="x">✕</span> Lista de convidados em papel que se perde</li>
+              <li><span class="x">✕</span> Contagem de público "de cabeça", diferente por porteiro</li>
+              <li><span class="x">✕</span> Garçom indo e voltando à cozinha para perguntar</li>
+              <li><span class="x">✕</span> Escala combinada por mensagens soltas</li>
+              <li><span class="x">✕</span> Orçamentos e contratos em planilhas e pastas físicas</li>
+            </ul>
+          </div>
+          <div class="compare__col compare__col--after reveal" data-delay="120">
+            <h3>Com o Celebri</h3>
+            <ul class="compare__list">
+              <li><span class="tick">✓</span> QR do convite lido em segundos, com nome e quantidade</li>
+              <li><span class="tick">✓</span> Um total único compartilhado entre todos os porteiros</li>
+              <li><span class="tick">✓</span> Pedido da mesa aparece direto na tela da cozinha</li>
+              <li><span class="tick">✓</span> Escala no app, com confirmação e check-in</li>
+              <li><span class="tick">✓</span> Orçamentos, contratos e clientes centralizados no painel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLATAFORMAS ===================== -->
+    <section class="section section--dark" id="plataformas">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">A plataforma</span>
+          <h2 class="section__title">Dois produtos, um só ecossistema</h2>
+          <p class="section__sub">
+            O gerente prepara tudo no painel web. No dia da festa, a equipe opera pelo aplicativo.
+            Ambos conversam com a mesma API central.
+          </p>
+        </div>
+
+        <div class="platforms">
+          <article class="platform reveal">
+            <div class="platform__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2.5" y="3.5" width="19" height="13" rx="2"/><path d="M8 20.5h8M12 16.5v4"/></svg>
+            </div>
+            <span class="platform__tag">Para o gestor</span>
+            <h3>Painel Web</h3>
+            <p>
+              O centro administrativo do buffet: clientes, orçamentos, eventos, escalas,
+              documentos, estoque e fornecedores em um só lugar, com dashboard analítico.
+            </p>
+            <ul class="platform__list">
+              <li>Dashboard com métricas e gráficos</li>
+              <li>Orçamentos com envio via WhatsApp</li>
+              <li>Gestão de documentos e contratos</li>
+              <li>Escalas e disponibilidade da equipe</li>
+            </ul>
+          </article>
+
+          <article class="platform platform--accent reveal" data-delay="120">
+            <div class="platform__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 5.5h3"/></svg>
+            </div>
+            <span class="platform__tag">Para a equipe</span>
+            <h3>Celebri Staff</h3>
+            <p>
+              O aplicativo Android que os funcionários usam durante o evento. Cada um entra
+              com o e-mail e abre a tela da sua função — com a marca do buffet aplicada.
+            </p>
+            <ul class="platform__list">
+              <li>Portaria com QR e contador</li>
+              <li>Mapa de mesas e comanda do garçom</li>
+              <li>Cozinha: pedidos, cardápio e estoque</li>
+              <li>Escalas, confirmação e check-in</li>
+            </ul>
+          </article>
+        </div>
+
+        <figure class="arch reveal" data-delay="200">
+          <div class="arch__node">
+            <span>Painel Web</span>
+            <small>dono · gerente</small>
+          </div>
+          <div class="arch__line"></div>
+          <div class="arch__node arch__node--core">
+            <span>API Central</span>
+            <small>Node.js · Express · JWT</small>
+          </div>
+          <div class="arch__line"></div>
+          <div class="arch__node">
+            <span>App Celebri Staff</span>
+            <small>portaria · garçom · cozinha</small>
+          </div>
+          <figcaption>Um banco de dados PostgreSQL compartilhado, com todos os dados isolados por buffet.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== RECURSOS ===================== -->
+    <section class="section section--light" id="recursos">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--dark">Recursos</span>
+          <h2 class="section__title">Tudo o que o buffet precisa para operar</h2>
+          <p class="section__sub">
+            Do cadastro do cliente à operação no salão, o Celebri cobre o ciclo completo do evento.
+          </p>
+        </div>
+
+        <div class="tabs reveal">
+          <button class="tab is-active" data-tab="gestao">Painel Web</button>
+          <button class="tab" data-tab="operacao">App da equipe</button>
+        </div>
+
+        <!-- Gestão -->
+        <div class="features" id="tab-gestao">
+          <article class="feature reveal">
+            <div class="feature__icon" aria-hidden="true">👥</div>
+            <h3>Clientes</h3>
+            <p>CRUD completo com Nome, e-mail, RG/CPF e telefone, e atalho direto para o WhatsApp.</p>
+          </article>
+          <article class="feature reveal" data-delay="60">
+            <div class="feature__icon" aria-hidden="true">🧾</div>
+            <h3>Orçamentos</h3>
+            <p>Valor, validade, status (pendente, aprovado, reprovado) e envio rápido ao cliente.</p>
+          </article>
+          <article class="feature reveal" data-delay="120">
+            <div class="feature__icon" aria-hidden="true">🎉</div>
+            <h3>Eventos</h3>
+            <p>Data, local, equipe alocada, convidados e ciclo de vida do evento com status automático.</p>
+          </article>
+          <article class="feature reveal" data-delay="180">
+            <div class="feature__icon" aria-hidden="true">🗓️</div>
+            <h3>Escalas</h3>
+            <p>Alocação por função, sem choque de horário, com intervalo mínimo configurável por buffet.</p>
+          </article>
+          <article class="feature reveal" data-delay="60">
+            <div class="feature__icon" aria-hidden="true">📄</div>
+            <h3>Documentos</h3>
+            <p>Gestão de contratos e arquivos (PDF, PNG, JPG) ou links externos vinculados ao cliente.</p>
+          </article>
+          <article class="feature reveal" data-delay="120">
+            <div class="feature__icon" aria-hidden="true">📦</div>
+            <h3>Estoque</h3>
+            <p>Entradas, saídas e inventário de produtos por quantidade, unidade e custo unitário.</p>
+          </article>
+          <article class="feature reveal" data-delay="180">
+            <div class="feature__icon" aria-hidden="true">📊</div>
+            <h3>Dashboard</h3>
+            <p>Sazonalidade de eventos, uso dos locais e dispersão de convidados vs. custo.</p>
+          </article>
+          <article class="feature reveal" data-delay="240">
+            <div class="feature__icon" aria-hidden="true">🚚</div>
+            <h3>Fornecedores &amp; Catálogos</h3>
+            <p>Fornecedores categorizados e catálogos de serviços/buffet prontos para enviar.</p>
+          </article>
+        </div>
+
+        <!-- Operação -->
+        <div class="features is-hidden" id="tab-operacao">
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🎫</div>
+            <h3>Portaria com QR</h3>
+            <p>Leitura do QR do convite para 1 ou N pessoas, com entrada parcial e correção.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🔢</div>
+            <h3>Contador de pessoas</h3>
+            <p>+1 / −1 compartilhado entre os porteiros, sem perder a contagem.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🍽️</div>
+            <h3>Mapa de mesas</h3>
+            <p>Situação de cada mesa por cor e comanda com itens, anotações e alerta de alergia.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">👨‍🍳</div>
+            <h3>Painel da cozinha</h3>
+            <p>Pedidos por ordem de chegada, cardápio com horários previstos e estoque reservado.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">📲</div>
+            <h3>Minhas escalas</h3>
+            <p>Próximos eventos e anteriores, confirmação de presença e "Cheguei no evento".</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon" aria-hidden="true">🎨</div>
+            <h3>White Label</h3>
+            <p>O app reconhece o buffet pelo e-mail e aplica logo, nome e cores automaticamente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMO FUNCIONA ===================== -->
+    <section class="section section--dark" id="como-funciona">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Como funciona</span>
+          <h2 class="section__title">Do primeiro contato ao fim da festa</h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Cadastro</h3>
+            <p>O cliente entra em contato e é cadastrado no painel, com atalho para o WhatsApp.</p>
+          </li>
+          <li class="step reveal" data-delay="100">
+            <span class="step__num">02</span>
+            <h3>Orçamento</h3>
+            <p>Um orçamento é gerado e enviado. Aprovado, o evento é oficialmente agendado.</p>
+          </li>
+          <li class="step reveal" data-delay="200">
+            <span class="step__num">03</span>
+            <h3>Preparação</h3>
+            <p>Contrato anexado, equipe escalada e a marca do buffet configurada.</p>
+          </li>
+          <li class="step reveal" data-delay="300">
+            <span class="step__num">04</span>
+            <h3>Operação</h3>
+            <p>No dia, a equipe usa o app: portaria, mesas e cozinha em sintonia, com o gestor acompanhando.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== WHITE LABEL ===================== -->
+    <section class="section section--light" id="white-label">
+      <div class="container wl">
+        <div class="wl__text reveal">
+          <span class="eyebrow eyebrow--dark">White Label</span>
+          <h2 class="section__title">A cara do seu buffet, não a nossa</h2>
+          <p class="section__sub">
+            Cada buffet assinante tem sua identidade. O aplicativo descobre a marca pelo e-mail
+            do funcionário e aplica <strong>logo, nome e paleta de cores</strong> na hora — a equipe
+            sente que o app é do buffet.
+          </p>
+          <ul class="wl__list">
+            <li><span class="tick">✓</span> Tema aplicado automaticamente no login</li>
+            <li><span class="tick">✓</span> Cores e logo configuráveis pelo painel</li>
+            <li><span class="tick">✓</span> Experiência consistente em web e mobile</li>
+          </ul>
+        </div>
+
+        <div class="wl__visual reveal" data-delay="120" aria-hidden="true">
+          <div class="wl__palette">
+            <span class="swatch" style="--c:#1CEAFF"></span>
+            <span class="swatch" style="--c:#FF45FF"></span>
+            <span class="swatch" style="--c:#0E1A3A"></span>
+            <span class="swatch" style="--c:#7B9BFF"></span>
+          </div>
+          <div class="wl__mock">
+            <div class="wl__mock-top">
+              <img src="assets/logo.svg" alt="" width="34" height="34" />
+              <div>
+                <strong>Buffet Aurora</strong>
+                <small>Bem-vindo de volta</small>
+              </div>
+            </div>
+            <div class="wl__mock-body">
+              <span class="bar"></span>
+              <span class="bar bar--short"></span>
+              <span class="btn-mock">Entrar</span>
+            </div>
+          </div>
+          <p class="wl__hint">Troque a marca. A experiência continua.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== APP SHOWCASE ===================== -->
+    <section class="section section--dark" id="app">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Celebri Staff</span>
+          <h2 class="section__title">O aplicativo da equipe, tela por tela</h2>
+          <p class="section__sub">
+            Uma operação simples: cada funcionário entra com o e-mail e vê apenas o que precisa.
+          </p>
+        </div>
+
+        <div class="screens">
+          <figure class="screen reveal">
+            <div class="phone">
+              <div class="phone__notch"></div>
+              <div class="phone__screen"><img src="assets/escalas.png" alt="Tela Minhas Escalas do app" loading="lazy" /></div>
+            </div>
+            <figcaption><strong>Minhas escalas</strong><span>Confirme presença e faça check-in</span></figcaption>
+          </figure>
+          <figure class="screen screen--featured reveal" data-delay="120">
+            <div class="phone">
+              <div class="phone__notch"></div>
+              <div class="phone__screen"><img src="assets/portaria.png" alt="Tela da Portaria com contador de presentes" loading="lazy" /></div>
+            </div>
+            <figcaption><strong>Portaria</strong><span>Contador compartilhado e leitura de QR</span></figcaption>
+          </figure>
+          <figure class="screen reveal" data-delay="240">
+            <div class="phone">
+              <div class="phone__notch"></div>
+              <div class="phone__screen"><img src="assets/entrada.png" alt="Tela de entrada do convite Família Souza" loading="lazy" /></div>
+            </div>
+            <figcaption><strong>Entrada do convite</strong><span>Quantidade editável e parcial</span></figcaption>
+          </figure>
+        </div>
+
+        <div class="app-features">
+          <div class="app-feature reveal"><span>🔒</span> Login seguro por e-mail + código</div>
+          <div class="app-feature reveal" data-delay="80"><span>📡</span> Telas leves, pensadas para o salão</div>
+          <div class="app-feature reveal" data-delay="160"><span>🔔</span> Sem listas de papel nem recados</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAINEL WEB ===================== -->
+    <section class="section section--light" id="painel">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--dark">Painel Web</span>
+          <h2 class="section__title">O centro de comando do buffet</h2>
+          <p class="section__sub">
+            Toda a gestão em um só lugar: cadastre clientes, monte orçamentos, agende eventos,
+            escale a equipe e acompanhe os números — no computador do escritório ou no celular
+            durante a montagem da festa.
+          </p>
+        </div>
+
+        <div class="browser reveal" data-delay="120">
+          <div class="browser__bar">
+            <span class="browser__dot" style="--d:#ff5f57"></span>
+            <span class="browser__dot" style="--d:#febc2e"></span>
+            <span class="browser__dot" style="--d:#28c840"></span>
+            <span class="browser__url">app.celebri.com/dashboard</span>
+          </div>
+          <img
+            class="browser__shot"
+            src="assets/painel-web.png"
+            alt="Tela do painel web do Celebri: dashboard com indicadores de clientes, próximos eventos, orçamentos pendentes, gráfico de sazonalidade e agenda de eventos"
+            loading="lazy"
+            width="2560"
+            height="1600"
+          />
+        </div>
+
+        <div class="web-modules">
+          <article class="web-module reveal">
+            <span class="web-module__icon" aria-hidden="true">👥</span>
+            <h3>Clientes</h3>
+            <p>Cadastro completo com contato direto via WhatsApp.</p>
+          </article>
+          <article class="web-module reveal" data-delay="60">
+            <span class="web-module__icon" aria-hidden="true">🧾</span>
+            <h3>Orçamentos</h3>
+            <p>Propostas com valor, validade e status.</p>
+          </article>
+          <article class="web-module reveal" data-delay="120">
+            <span class="web-module__icon" aria-hidden="true">🎉</span>
+            <h3>Eventos</h3>
+            <p>Data, local, convidados e equipe alocada.</p>
+          </article>
+          <article class="web-module reveal" data-delay="180">
+            <span class="web-module__icon" aria-hidden="true">🗓️</span>
+            <h3>Escalas</h3>
+            <p>Alocação por função, sem choque de horário.</p>
+          </article>
+          <article class="web-module reveal">
+            <span class="web-module__icon" aria-hidden="true">📄</span>
+            <h3>Documentos</h3>
+            <p>Contratos e arquivos por cliente e evento.</p>
+          </article>
+          <article class="web-module reveal" data-delay="60">
+            <span class="web-module__icon" aria-hidden="true">📦</span>
+            <h3>Estoque</h3>
+            <p>Entradas, saídas e inventário de produtos.</p>
+          </article>
+          <article class="web-module reveal" data-delay="120">
+            <span class="web-module__icon" aria-hidden="true">🚚</span>
+            <h3>Fornecedores</h3>
+            <p>Categorizados e com contato rápido.</p>
+          </article>
+          <article class="web-module reveal" data-delay="180">
+            <span class="web-module__icon" aria-hidden="true">📊</span>
+            <h3>Dashboard</h3>
+            <p>Métricas e gráficos para decidir com dados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SEGURANÇA ===================== -->
+    <section class="section section--dark" id="seguranca">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow">Segurança &amp; LGPD</span>
+          <h2 class="section__title">Cada buffet só vê os próprios dados</h2>
+          <p class="section__sub">
+            A plataforma foi construída pensando na proteção de dados de clientes,
+            funcionários e convidados.
+          </p>
+        </div>
+
+        <div class="security">
+          <article class="sec-card reveal">
+            <div class="sec-card__icon" aria-hidden="true">🛡️</div>
+            <h3>Isolamento multi-tenant</h3>
+            <p>Toda consulta é filtrada automaticamente pelo buffet. Um buffet nunca acessa dados de outro.</p>
+          </article>
+          <article class="sec-card reveal" data-delay="80">
+            <div class="sec-card__icon" aria-hidden="true">🔐</div>
+            <h3>Autenticação robusta</h3>
+            <p>JWT nas sessões, senhas com bcrypt e código de primeiro acesso guardado apenas como hash.</p>
+          </article>
+          <article class="sec-card reveal" data-delay="160">
+            <div class="sec-card__icon" aria-hidden="true">🎫</div>
+            <h3>QR sem dados pessoais</h3>
+            <p>O QR do convite carrega só um token aleatório de 128 bits — nada de nome ou telefone.</p>
+          </article>
+          <article class="sec-card reveal" data-delay="240">
+            <div class="sec-card__icon" aria-hidden="true">📋</div>
+            <h3>Conformidade com a LGPD</h3>
+            <p>Minimização de dados, controle de acesso por função e trilha de retenção planejada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPE ===================== -->
+    <section class="section section--light" id="equipe">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--dark">Portfólio</span>
+          <h2 class="section__title">Feito pela equipe L2Tech</h2>
+          <p class="section__sub">
+            Projeto Integrador do 5º semestre de Desenvolvimento de Software Multiplataforma.
+          </p>
+        </div>
+
+        <div class="team">
+          <article class="member reveal">
+            <div class="member__avatar" style="--g:linear-gradient(135deg,#1CEAFF,#5B7BFF)">LV</div>
+            <h3>Luis Felipe Veronezi</h3>
+            <span class="member__role">Product Owner</span>
+            <p>Visão do produto, priorização do backlog e validação das entregas.</p>
+          </article>
+          <article class="member reveal" data-delay="100">
+            <div class="member__avatar" style="--g:linear-gradient(135deg,#B82AB8,#7B2AFF)">LA</div>
+            <h3>Leonardo Antoniassi</h3>
+            <span class="member__role">Dev Lead / Fullstack</span>
+            <p>Arquitetura, aplicativo .NET MAUI, API Node.js e infraestrutura Docker.</p>
+          </article>
+          <article class="member reveal" data-delay="200">
+            <div class="member__avatar" style="--g:linear-gradient(135deg,#1CEAFF,#B82AB8)">BR</div>
+            <h3>Bruno Righi</h3>
+            <span class="member__role">UX/UI &amp; QA</span>
+            <p>Interfaces, experiência do usuário, identidade White Label e testes.</p>
+          </article>
+        </div>
+
+        <div class="repos reveal" data-delay="120">
+          <a class="repo" href="https://github.com/leoantoniassi/celebri" target="_blank" rel="noopener">
+            <span class="repo__label">Painel web + API</span>
+            <span class="repo__name">github.com/leoantoniassi/celebri</span>
+            <span class="repo__arrow">↗</span>
+          </a>
+          <a class="repo" href="https://github.com/leoantoniassi/celebri-staff" target="_blank" rel="noopener">
+            <span class="repo__label">Aplicativo móvel</span>
+            <span class="repo__name">github.com/leoantoniassi/celebri-staff</span>
+            <span class="repo__arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta" id="contato">
+      <div class="cta__bg" aria-hidden="true">
+        <div class="blob blob--cyan"></div>
+        <div class="blob blob--magenta"></div>
+      </div>
+      <div class="container cta__inner reveal">
+        <h2>Pronto para levar o seu buffet para o digital?</h2>
+        <p>
+          Fale com a gente e veja como o Celebri organiza a gestão e a operação
+          dos seus eventos — com a sua marca.
+        </p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Celebri" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn--outline btn--lg" href="https://github.com/leoantoniassi/celebri" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="Celebri" width="40" height="40" />
+        <div>
+          <strong>Celebri</strong>
+          <small>Gestão de buffets e eventos</small>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Rodapé">
+        <a href="#plataformas">Plataformas</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#app">App</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="https://github.com/leoantoniassi/celebri" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Celebri · Equipe L2Tech. Projeto Integrador.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
