@@ -1,7 +1,7 @@
 /* ============================================================
    Celebri — Landing page
    Estilo: azul-marinho (#16254F) + ciano (#1CEAFF)
-   Fontes: Rubik (títulos) + Nunito Sans (corpo)
+   Fontes: Plus Jakarta Sans (títulos) + Inter (corpo)
    ============================================================ */
 
 :root {
@@ -12,8 +12,10 @@
   --navy-700: #24397A;
   --cyan: #1CEAFF;
   --cyan-soft: rgba(28, 234, 255, 0.14);
-  --magenta: #B82AB8;
-  --magenta-soft: rgba(184, 42, 184, 0.16);
+  --magenta: #FF45FF;
+  --magenta-soft: rgba(255, 69, 255, 0.16);
+  --tertiary: #1F357F;
+  --danger: #FF7B8A;
   --light: #FBFBF8;
   --light-2: #EEF1F8;
   --white: #F4F6FB;
@@ -29,8 +31,11 @@
   --maxw: 1180px;
 
   /* Tipografia */
-  --font-head: "Rubik", system-ui, sans-serif;
-  --font-body: "Nunito Sans", system-ui, sans-serif;
+  --font-head: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Gradiente oficial da marca (ciano -> magenta) */
+  --brand-gradient: linear-gradient(135deg, var(--cyan), var(--magenta));
 
   --shadow: 0 24px 60px rgba(8, 16, 40, 0.18);
   --shadow-soft: 0 14px 40px rgba(8, 16, 40, 0.10);
@@ -53,6 +58,25 @@ body {
 }
 
 img { max-width: 100%; display: block; }
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  font-size: 1em;
+}
 
 h1, h2, h3, h4 {
   font-family: var(--font-head);
@@ -97,7 +121,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section--dark {
   background:
     radial-gradient(900px 500px at 85% -10%, rgba(28, 234, 255, 0.10), transparent 60%),
-    radial-gradient(700px 500px at -10% 110%, rgba(184, 42, 184, 0.12), transparent 60%),
+    radial-gradient(700px 500px at -10% 110%, rgba(255, 69, 255, 0.12), transparent 60%),
     linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
   color: var(--white);
 }
@@ -145,7 +169,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section--dark .section__sub { color: var(--muted-dark); }
 
 .grad-text {
-  background: linear-gradient(100deg, var(--cyan) 0%, #7B9BFF 50%, var(--magenta) 100%);
+  background: var(--brand-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -168,7 +192,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   white-space: nowrap;
 }
 .btn--primary {
-  background: linear-gradient(135deg, var(--cyan), #37B9FF);
+  background: var(--cyan);
   color: var(--navy-deep);
   box-shadow: 0 12px 30px rgba(28, 234, 255, 0.28);
 }
@@ -286,7 +310,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .blob--cyan { width: 420px; height: 420px; background: var(--cyan); top: -120px; right: -80px; }
 .blob--magenta { width: 340px; height: 340px; background: var(--magenta); bottom: -120px; left: -90px; animation-delay: -5s; }
-.blob--blue { width: 300px; height: 300px; background: #3F6BFF; top: 40%; left: 35%; animation-delay: -9s; opacity: 0.35; }
+.blob--blue { width: 300px; height: 300px; background: var(--tertiary); top: 40%; left: 35%; animation-delay: -9s; opacity: 0.35; }
 @keyframes float {
   0%, 100% { transform: translate(0, 0) scale(1); }
   33% { transform: translate(30px, -24px) scale(1.06); }
@@ -326,8 +350,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--muted-dark);
 }
 .hero__points li { display: flex; align-items: center; gap: 8px; }
-.tick { color: var(--cyan); font-weight: 800; }
-.x { color: #ff7b8a; font-weight: 800; }
+.tick, .x { display: inline-flex; align-items: center; margin-right: 0.35rem; }
+.tick { color: var(--cyan); }
+.x { color: var(--danger); }
 
 .hero__visual {
   position: relative;
@@ -554,7 +579,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .arch__node span { display: block; font-family: var(--font-head); font-weight: 600; }
 .arch__node small { color: var(--muted-dark); font-size: 0.8rem; }
 .arch__node--core {
-  background: linear-gradient(135deg, rgba(28, 234, 255, 0.18), rgba(184, 42, 184, 0.18));
+  background: linear-gradient(135deg, rgba(28, 234, 255, 0.18), rgba(255, 69, 255, 0.18));
   border-color: rgba(28, 234, 255, 0.45);
 }
 .arch__line { width: 50px; height: 2px; background: var(--line); }
@@ -721,7 +746,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   text-align: center;
   padding: 13px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--cyan), #37B9FF);
+  background: var(--cyan);
   color: var(--navy-deep);
   font-family: var(--font-head);
   font-weight: 700;
